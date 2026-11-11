@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+  select,
+  input[type='text'],
+  input[type='number'],
+  input[type='date'],
+  input[type='search'] {
+    @apply h-9 rounded-md border border-line bg-white px-2.5 text-sm text-ink outline-none transition;
+  }
+  select:focus,
+  input:focus {
+    @apply border-brand ring-2 ring-brand/20;
+  }
+}
